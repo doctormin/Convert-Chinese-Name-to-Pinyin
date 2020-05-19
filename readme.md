@@ -6,6 +6,7 @@ API :
     chinese_name : chinese name<br/>
     one `namedtuple` is returned<br/>
     e.g. 张三 -> Pinyin(surname='San', name='Zhang')
+    
 2. `lazy_convert(chinese_name : str) -> str`<br/>
     chinese_name : chinese name<br/>
     returned str : pinyin of the given chinese name<br/>
@@ -20,9 +21,10 @@ API :
 
 API :
 1. `detailed_convert(chinese_name : str)`<br/>
-    chinese_name : 中文名<br/>  
+    chinese_name : 中文名<br/>
     返回值： 一个namedtuple<br/>
     e.g. 张三 -> Pinyin(surname='San', name='Zhang')
+
 2.  `lazy_convert(chinese_name : str) -> str`<br/>
     chinese_name : 中文名<br/>
     返回值: 拼音（字符串）<br/>
