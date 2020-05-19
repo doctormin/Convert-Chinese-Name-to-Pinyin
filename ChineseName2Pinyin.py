@@ -118,7 +118,7 @@ class NamePinyin:
         
         '''
 
-    def detailed_convert(self, cname : str) -> tuple:
+    def detailed_convert(self, cname : str) -> namedtuple:
         # cname : chinese name
         # returned tuple : (surname, name)
         for each in self.surname_list1:
