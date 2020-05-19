@@ -118,8 +118,9 @@ class NamePinyin:
         
         '''
 
-    def detailed_convert(self, cname):
-        # 可以返回一个namedtuple,清晰的写明姓和名, cname是中文名(type: str)
+    def detailed_convert(self, cname : str) -> tuple:
+        # cname : chinese name
+        # returned tuple : (surname, name)
         for each in self.surname_list1:
             if cname[0] == each:
                 if cname[0] == '司':
@@ -353,8 +354,9 @@ class NamePinyin:
         self.__detailed_name = Pinyin(surname=self.__surname, name=self.__name)
         return self.__detailed_name
 
-    def lazy_convert(self, cname):
-        # 可以返回一个string ,简单暴力
+    def lazy_convert(self, cname : str) -> str:
+        # cname : chinese name (e.g. 张三)
+        # returned str : chinese name in pinyin (e.g. Zhang San)
         for each in self.surname_list1:
             if cname[0] == each:
                 if cname[0] == '司':

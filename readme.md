@@ -1,16 +1,15 @@
 Created in December 2019 by MinoZhao
 
-代码由“转换类”和测试代码组成
 
-提供两个接口：
+API:
 1. detailed_convert("汉字名")
     将会print一个namedtuple显示姓和名的拼音 e.g. Pinyin(surname='zhao', name='mino')
 2. lazy_convert("汉字名")
-    将会print一个str显示姓名的拼音 e.g. zhao mino
+    输出字符串 e.g. zhao mino
 
-->类的实现依据为pypinyin
-->经过优化，可以自动识别复姓并按照复姓的格式输出
-->经过优化，部分发音特殊的姓能保证输出正确 e.g. 单(shan)、单于(chanyu)
++ 类的实现依据为`pypinyin`
++ 经过优化，可以自动识别复姓并按照复姓的格式输出
++ 经过优化，部分发音特殊的姓能保证输出正确 e.g. 单(shan)、单于(chanyu)
 
 特殊发音
 ```python
